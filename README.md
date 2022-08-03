@@ -1,4 +1,5 @@
 # Misspelling
+
 Python library to generate likely misspellings of words using the levenshtein distance
 
 The `damerau_levenshtein_distance` can also be used to correct the misspelling.
@@ -6,6 +7,10 @@ The `damerau_levenshtein_distance` can also be used to correct the misspelling.
 `damerau_levenshtein_distance` and `levenshtein_distance` are both super fast as they are jit compiled with `numba`
 
 The idea was to correct Speach to Text and OCR output.
+
+Makes a good fuzzy finder.
+
+Factors in keyboard layout to make physically close keys appear more often, simulating fat fingers.
 
 ## create_misspelling
 ```python
