@@ -23,7 +23,7 @@ levenshtein(seq1, seq2)                 -->     Compute the Levenshtein distance
 damerau_levenshtein_distance(s1, s2)    -->   Compute the Damerau-Levenshtein distance between two given strings (s1 and s2) deletion, insertion, substitution, transposition
 LCSLength(X, Y, m, n)                   -->    Function to find the length of the longest common subsequence of sequences `X[0…m-1]` and `Y[0…n-1]`
 show_LCSLength(X, Y, normalise=True)    -->   Caller for Largest Common Subsequence ie LCSLength()
-
+hamming_distance(string1, string2)
 
 '''
 
@@ -294,7 +294,25 @@ def damerau_levenshtein_distance(seq1, seq2):
     # print(matrix)
     return (matrix[size_x - 1, size_y - 1])
 
+@nb.njit
+def hamming_distance(string1, string2):
+	"""
+		https://en.wikipedia.org/wiki/Hamming_distance
 
+		"karolin" and "kathrin" is 3.
+		"karolin" and "kerstin" is 3.
+		"kathrin" and "kerstin" is 4.
+		0000 and 1111 is 4.
+		2173896 and 2233796 is 3.
+
+		>>> hamming_distance("karolin","kathrin")
+		3
+	"""
+    dist_counter = 0
+    for n in range(len(string1)):
+            if string1[n] != string2[n]:
+                    dist_counter += 1
+    return dist_counter
 
 @nb.njit
 def LCSLength(X, Y, m, n):
