@@ -6,14 +6,15 @@ The `damerau_levenshtein_distance` can also be used to correct the misspelling.
 
 `damerau_levenshtein_distance` and `levenshtein_distance` are both super fast as they are jit compiled with `numba`
 
-The idea was to correct Speach to Text and OCR output.
+The idea was to correct Speech to Text and OCR output.
 
-Makes a good fuzzy finder.
+- Makes a good fuzzy finder.
 
-Factors in keyboard layout to make physically close keys appear more often, simulating fat fingers.
+- Factors in keyboard layout to make physically close keys appear more often, simulating fat fingers.
 
 ## create_misspelling
 ```python
+>>> from create_misspelling import create_misspelling
 >>> create_misspelling("flying")
 FUNCS:  ['transposition']
 "fyling"
@@ -158,3 +159,9 @@ def spell_check(dictionary):
     ...
 
 ```
+
+Todo: Use the built in linux `words` located in `/usr/share/dict/words` or `/usr/dict/words`
+
+Note: https://www.geeksforgeeks.org/how-to-read-specific-lines-from-a-file-in-python/
+
+
