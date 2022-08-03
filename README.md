@@ -112,7 +112,7 @@ FUNCS:  ['insertion']
 
 ## Correct spelling
 
-```
+```python
 from create_misspelling import damerau_levenshtein_distance
 from create_misspelling import create_misspelling
 from create_misspelling import test_words
@@ -147,7 +147,7 @@ Todo: Might be able to vectorise the spell check and apply `damerau_levenshtein_
 Or something like this
 
 
-```
+```python
 @nb.njit
 def spell_check(dictionary):
     ...
