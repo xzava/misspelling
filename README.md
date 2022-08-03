@@ -1,6 +1,6 @@
 # Misspelling
 
-Python library to generate likely misspellings of words using the [levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance)
+Python library to generate likely misspellings of words using the [levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) and [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance)
 
 The `damerau_levenshtein_distance` can also be used to correct the misspelling.
 
