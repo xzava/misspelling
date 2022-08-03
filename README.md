@@ -160,7 +160,7 @@ def spell_check(dictionary):
 
 ```
 
-Todo: Use the built in linux `words` located in `/usr/share/dict/words` or `/usr/dict/words`
+Todo: Use the built in linux `words` located in `/usr/share/dict/words` or `/usr/dict/words` or `/usr/share/dict/american-english`
 
 Note: https://www.geeksforgeeks.org/how-to-read-specific-lines-from-a-file-in-python/
 
