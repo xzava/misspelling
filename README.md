@@ -165,3 +165,5 @@ Todo: Use the built in linux `words` located in `/usr/share/dict/words` or `/usr
 Note: https://www.geeksforgeeks.org/how-to-read-specific-lines-from-a-file-in-python/
 
 
+- https://www.youtube.com/watch?v=SoZ1CVU2DdE
+- https://github.com/tkarabela/bigpython/blob/master/003--fuzzy-text-search/fuzzy-text-search.ipynb
